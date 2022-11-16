@@ -5,8 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated landscape</title>
+    <style>
+
+        #landscape{
+            display:block;
+            position:fixed;
+            width:500px;
+            height:500px;
+            margin-top:300px;
+            margin-left:50px;
+        }
+    
+        #hills{
+       display: block;
+       width: 300px;
+       height: 100px;
+       background-color: brown;
+       z-index: 10;
+
+        }
+        .hill{
+            position: fixed;
+            display: block;
+            background-color: brown;
+            border: 1px solid  black;
+            transform: rotate(45deg);
+            width: 60px;
+            height: 60px;
+        }
+        .hill1{
+            margin-left: 15px;
+            margin-top: 15px;
+            z-index: -10;
+        }
+
+        .hill2{
+            margin-left: 150px;
+            margin-top: -25px;
+            z-index: -10;
+        }
+
+        .hill3{
+            width: 90px;
+            height: 90px;
+            margin-left: 80px;
+            margin-top: -45px;
+            z-index: -11;
+        }
+
+        .hill4{
+            width: 90px;
+            height: 90px;
+            margin-left: 180px;
+            margin-top: -40px;
+            z-index: -12;
+        }
+
+        .grass{
+            width: 300px;
+            height: 45px;
+            background-color: green;
+            position: fixed;
+            display: block;
+            margin-top: 55px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="landscape">
+        <!-- hill  -->
+        <div class="hill hill1"></div>
+        <div class="hill hill2 "></div>
+        <div class="hill hill3 "></div>
+        <div class="hill hill4 "></div>
+         
+        <!-- grass  -->
+         <div class="grass"></div>
+
+         <!-- tree  -->
+         <div class="tree1">
+            <div class="tree_leaves"></div>
+         </div>
+
+        <div id="hills"></div>
+    </div>
 </body>
 </html>
